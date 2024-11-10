@@ -5,21 +5,33 @@
 <style>
 body {
 text-align: center;
+background: url("https://cdn.britannica.com/51/100651-050-EE263D61/Mount-Rainier-Cascade-Range-Washington.jpg");
+background-size: cover;
 }
 </style>
 <script>
 function showThem() {
 alert("The plates involved are the North American and the Juan De Fuca plates. These plates are converging, making these volcanoes.");
 }
+function checkJoke() {
+var jkansw = document.getElementById("jk").value;
+if(jkansw == "they shake lands") {
+alert("Yup! That was funny right?"); }
+else {
+alert("Good try, but would you like to know the real answer?");
+alert("They shake lands!! Get it? Lands, and hands! Hahahaha!!!"); }
+}
 </script>
 </head>
 <body>
-<marquee style="font-size: 35px; border: ridge 4px cyan" scrollamount="15">Welcome to my project about the Cascade Mountains</marquee>
-<details>
+<marquee style="font-size: 35px; border: ridge 4px navy" scrollamount="15">Welcome to our project about the Cascade Mountains</marquee>
+<details style="background-color: white; margin: 20px">
 <summary style="color: blue;">How my landform was formed</summary>
 <p style="color: orange">The Cascade Mountains was formed near a convergent boundary where an oceanic plate(Juan De Fuca) and a continental plate(North American) are colliding and pushing together. The oceanic plate is subducting, and when it melts due to the high heat and pressure, it rises and erupts, creating the volcanic mountains.</p>
 </details>
-<p onclick="showThem();" style="color: #7409ed">Click here to see what plates were involved in making this Rift Valley</p>
-<p style="border: dashed 2px yellow">The Cascade Mountain Range is a range that strectches from northern California to British Columbia(Canada), passing through Oregon and Washington.</p>
+<p onclick="showThem();" style="color: #7409ed; background-color: yellow; margin: 20px">Click here to see what plates were involved in making this Rift Valley</p>
+<p style="border: dashed 2px yellow"><mark>The Cascade Mountain Range is a range that strectches from northern California to British Columbia(Canada), passing through Oregon and Washington.</mark></p>
+Quick Joke: How do tectonic plates greet each other?
+<input type="text" id="jk"/><button onclick="checkJoke();">See if I'm right</button>
 </body>
 </html>
