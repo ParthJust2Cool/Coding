@@ -31,7 +31,7 @@ alert("They shake lands!! Get it? Lands, and hands! Hahahaha!!!"); }
 <p style="color: #b40404"><b>The Cascade Mountains was formed near a convergent boundary where an oceanic plate(Juan De Fuca) and a continental plate(North American) are colliding and pushing together. The oceanic plate is subducting, and when it melts due to the high heat and pressure, it rises and erupts, creating the volcanic mountains.</b></p>
 </details>
 <p onclick="showThem();" style="color: black;"><b>Click here to see what plates were involved in making this Rift Valley</b></p>
-<p style="border: dashed 5px yellow; margin: 20px"><b>The Cascade Mountain Range is a range that strectches from northern California to British Columbia(Canada), passing through Oregon and Washington.</b></p>
+<p style="border: navy 5px dashed; margin: 10px"><b>The Cascade Mountain Range is a range that strectches from northern California to British Columbia(Canada), passing through Oregon and Washington.</b></p>
 <p>Quick Joke: How do tectonic plates greet each other?</p>
 <input type="text" id="jk"/><button onclick="checkJoke();">See if I'm right</button>
 <p><b>Geologists study the Cascade Mountains because it gives them an opportunity to study processes such as the movement of tectonic plates, it gives them an opportunity to study stream dynamics(like the speed of the stream/water) and it gives them the opportunity to study the mineral deposits from many geologic ages.</b></p>
@@ -44,7 +44,13 @@ alert("They shake lands!! Get it? Lands, and hands! Hahahaha!!!"); }
 <b>4.</b> <u>There is a lake in the Cascade Mountains called the Crater Lake, and it is the deepest lake in the U.S.<br/>
 <b>5.</b> <u>There is more rainfall and snow on the western slopes of the Cascade mountains than the eastern slopes, creating a rain shadow effect that results in drier conditions on the east side.<br/>
 </div>
-<marquee scrollamount="20"><img src="https://www.ultimatekilimanjaro.com/wp-content/uploads/2024/03/cascades13.jpg" style="width: 250px; border: 6px groove black"/>     <img src="https://www.ultimatekilimanjaro.com/wp-content/uploads/2024/03/cascades08.jpg" style="width: 250px; border: 6px groove white"/>     <img src="https://cdn.britannica.com/21/102921-050-FD03D790/Panorama-peaks-North-Cascades-National-Park-Washington.jpg" style="width: 250px; border: 6px groove black"/></marquee>
-<marquee style="font-size: 35px; border: ridge 4px navy; background-color: cyan" scrollamount="20">This is our project on the Cascade Mountains</marquee>
+<p onclick="tellsWhy()">Click Here to see why we chose this landform.</p>
+<p id="emp"></p>
+<marquee style="font-size: 35px; border: ridge 4px navy; background-color: cyan; margin: 20px" scrollamount="20">This is our project on the Cascade Mountains</marquee>
+<script>
+function tellsWhy() {
+document.getElementById("emp").innerText = "We chose this landform because we personally thought it was cool and it was also a whole mountain range of JUST volcanoes, so yeah. We also something we learned that we thought was interesting was that the deepest lake in the U.S actually is in the Cascade Mountain Range!";
+}
+</script>
 </body>
 </html>
