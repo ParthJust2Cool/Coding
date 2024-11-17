@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Experiment</title>
+<style>
+.pra {
+border: 3px groove black;
+padding: 30px;
+width: 20px;
+float: left;
+height: 20px;
+}
+body {
+background: url("https://www.wikihow.com/images/thumb/7/7d/Play-Tic-Tac-Toe-Step-4.jpg/v4-460px-Play-Tic-Tac-Toe-Step-4.jpg.webp");
+background-size: cover;
+}
+</style>
+</head>
+<body>
+<div style="clear: both">
+<div class="pra" onclick="changetoIt(this)" id="qw"></div>
+<div class="pra" onclick="changetoIt(this)" id="qe"></div>
+<div class="pra" onclick="changetoIt(this)" id="qr"></div>
+</div>
+<div style="clear: both">
+<div class="pra" onclick="changetoIt(this)" id="as"></div>
+<div class="pra" onclick="changetoIt(this)" id="ad"></div>
+<div class="pra" onclick="changetoIt(this)" id="af"></div>
+</div><div style="clear: both">
+<div class="pra" onclick="changetoIt(this)" id="zx"></div>
+<div class="pra" onclick="changetoIt(this)" id="zc"></div>
+<div class="pra" onclick="changetoIt(this)" id="zv"></div>
+</div>
+<script>
+rightNowUsing = "O";
+function changetoIt(bloop) {
+bloop.innerText = rightNowUsing;
+bloop.innerText == "O" ? rightNowUsing = "X" : rightNowUsing = "O";
+checkWon();
+checkWons();
+checkWonss();
+checkWonsi();
+checkWonsid();
+checkWonsis();
+checkWonsim();
+checkWonsil();
+}
+function checkWon() {
+one = document.getElementById("qw").innerText;
+two = document.getElementById("qe").innerText;
+three = document.getElementById("qr").innerText;
+if(one == "" || two == "" || three == "") return;
+if(one == two && one == three) {
+alert("Nice win!") }
+}
+function checkWons() {
+four = document.getElementById("as").innerText;
+five = document.getElementById("ad").innerText;
+six = document.getElementById("af").innerText;
+if(four == "" || five == "" || six == "") return;
+if(four == five && four == six) {
+alert("Nice win!") }
+}
+function checkWonss() {
+seven = document.getElementById("zx").innerText;
+eight = document.getElementById("zc").innerText;
+nine = document.getElementById("zv").innerText;
+if(seven == "" || eight == "" || nine == "") return;
+if(seven == eight && seven == nine) {
+alert("Nice win!") }
+}
+function checkWonsi() {
+one = document.getElementById("qw").innerText;
+four = document.getElementById("as").innerText;
+seven = document.getElementById("zx").innerText;
+if(one == "" || four == "" || seven == "") return;
+if(one == seven && four == one) {
+alert("Nice win!") }
+}
+function checkWonsid() {
+two = document.getElementById("qe").innerText;
+five = document.getElementById("ad").innerText;
+eight = document.getElementById("zc").innerText;
+if(two == "" || five == "" || eight == "") return;
+if(two == eight && two == five) {
+alert("Nice win!") }
+}
+function checkWonsis() {
+three = document.getElementById("qr").innerText;
+six = document.getElementById("af").innerText;
+nine = document.getElementById("zv").innerText;
+if(three == "" || nine == "" || six == "") return;
+if(three == nine && three == six) {
+alert("Nice win!") }
+}
+function checkWonsim() {
+one = document.getElementById("qw").innerText;
+five = document.getElementById("ad").innerText;
+nine = document.getElementById("zv").innerText;
+if(one == "" || nine == "" || five == "") return;
+if(one == five && nine == one) {
+alert("Nice win!") }
+}
+function checkWonsil() {
+three = document.getElementById("qr").innerText;
+five = document.getElementById("ad").innerText;
+seven = document.getElementById("zx").innerText;
+if(three == "" || five == "" || seven == "") return;
+if(three == seven && seven == five) {
+alert("Nice win!") }
+}
+</script>
+</body>
+</html>
